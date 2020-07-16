@@ -311,6 +311,7 @@ def glmnet(*, x, y, family='gaussian', **options):
     ne = options['dfmax']
     if len(ne) == 0:
         ne = nvars + 1
+    ne = int(ne)
 
     # check nx
     nx = options['pmax']
